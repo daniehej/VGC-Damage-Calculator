@@ -200,9 +200,9 @@ th {
 }
 
 .poke-info input[type="number"] {
-    width: auto;
-    box-sizing: border-box;
-    -webkit-box-sizing:border-box;
+    max-width: 36px;
+    /* box-sizing: border-box; */
+    /* -webkit-box-sizing:border-box; */
     -moz-box-sizing: border-box;
 }
 .info-group {
@@ -210,18 +210,18 @@ th {
 }
 
 .info-group table {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .info-group table td {
-    width:1px;
+    width: 36px;
     white-space:nowrap;
 }
 .set-selector {
     width: 28em;
 }
 .info-selectors select {
-    width: 15em;
+    width: 600px;
 }
 select.toxic-counter {
     width: 4.5em;
