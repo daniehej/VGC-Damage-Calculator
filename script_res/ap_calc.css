@@ -64,7 +64,7 @@ th {
 .btn {
     text-align: center;
     border: solid 1px #aaaaaa;
-    padding: 4px 8px;
+    padding: 4px 4px;
     position: relative;
     cursor: pointer;
     color: #555555;
@@ -193,7 +193,7 @@ th {
 .poke-info span.selection .select2-container,
 .poke-info span.selection .select2-selection,
 .poke-info span.selection .select2-selection__rendered{
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
     -moz-box-sizing: border-box;
@@ -207,6 +207,7 @@ th {
 }
 .info-group {
     margin: 1em 0;
+    max-width: 250px;
 }
 
 .info-group table {
@@ -218,7 +219,7 @@ th {
     white-space:nowrap;
 }
 .set-selector {
-    width: 28em;
+    width: 290px;
 }
 .info-selectors select {
     width: 600px;
@@ -230,13 +231,13 @@ select.toxic-counter {
     font-size: 0.9em;
 }
 .move-selector {
-    width: 9.0em;
+    width: 8.0em;
 }
 .poke-info input.move-bp {
     width: 2em;
 }
 .move-cat, .move-hits {
-    width: 4em;
+    width: 3.75em;
 }
 .poke-info .crit-btn {
     font-size: 0.8em;
@@ -297,7 +298,9 @@ select.toxic-counter {
     background-position: -18px -4px;
 }
 
-
+.select2{
+    max-width: 298px;
+}
 
 
 #autolevel {
@@ -374,4 +377,14 @@ select.toxic-counter {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.current-hp,
+.max-hp,
+.percent-hp{
+    max-width:36px;
+}
+
+#customMon{
+    max-width:272px;
 }
