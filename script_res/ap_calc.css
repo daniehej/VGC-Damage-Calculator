@@ -395,13 +395,15 @@ select.toxic-counter {
     max-width:272px;
 }
 
-#p2{
+#p2 {
     display:none;
 }
-#p3{
+
+#p3 {
     display:none;
 }
-#typeforme{
+
+#typeforme {
     display:none;
 }
 
