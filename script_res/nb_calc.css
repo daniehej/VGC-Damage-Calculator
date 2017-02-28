@@ -91,7 +91,7 @@ body, html {
 }
 
 .wrapper{
-    padding:0 4px;
+    padding:0;
     margin:0 auto;
     display: flex;
     flex-direction: column;
@@ -118,10 +118,12 @@ body, html {
 }
 .panel-heading {
   background-color: #1e3864;
-  padding: 10px 15px;
+  padding: 4px 0;
   border-bottom: 5px solid #e64946;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
+  border-radius: 2px;
+  width:100%;
+  max-width:500px;
+  text-align: center;
 }
 
 .panel-title {

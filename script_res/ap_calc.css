@@ -33,8 +33,8 @@ th {
 }
 .big-text {
     font-weight: bold;
-    font-size: 1.1em;
-    margin: 0.5em 0;
+    font-size: 12px;
+    margin: 5px 0;
 }
 .small-text {
     font-size: 0.8em;
@@ -45,13 +45,18 @@ th {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    width:100%;
+    text-align:center;
 }
 .panel {
     float: left;
     display: inline-block;
+    width:100%;
+    max-width:500px;
 }
 .poke-info {
-    width: auto;
+
+
 }
 .field-info {
     width: auto;
@@ -147,26 +152,27 @@ th {
 
 /* header */
 .move-result-group {
-    margin-top: 1em;
+    margin-top: 1px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    width:100%;
+    max-width:500px;
 }
 
 
 
 .move-result-subgroup {
-    min-width: 200px;
-    margin: 0 1em 1em 1em;
+    width: 50%;
+    margin: 0;
 }
 
 
 .move-result-group .btn {
-    margin-right: 1em;
+    margin-right: 0;
 }
 .main-result-group {
-    margin: 2em 0 1em;
+    margin: 0 0 0;
 }
 .result-move-header {
     font-size: 0.8em;
@@ -206,7 +212,7 @@ th {
     -moz-box-sizing: border-box;
 }
 .info-group {
-    margin: 1em 0;
+    margin: 1em auto;
     max-width: 250px;
 }
 
@@ -358,7 +364,7 @@ select.toxic-counter {
 }
 
 .field-info .panel-body {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
 }
@@ -387,4 +393,19 @@ select.toxic-counter {
 
 #customMon{
     max-width:272px;
+}
+
+#p2{
+    display:none;
+}
+#p3{
+    display:none;
+}
+#typeforme{
+    display:none;
+}
+
+td,
+label {
+    text-align: left;
 }

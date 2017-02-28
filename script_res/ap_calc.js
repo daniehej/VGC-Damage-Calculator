@@ -570,8 +570,8 @@ function calculate() {
     }
     bestResult.prop("checked", true);
     bestResult.change();
-    $("#resultHeaderL").text(p1.name + "'s Moves (select one to show detailed results)");
-    $("#resultHeaderR").text(p2.name + "'s Moves (select one to show detailed results)");
+    $("#resultHeaderL").text(p1.name + "'s Moves");
+    $("#resultHeaderR").text(p2.name + "'s Moves");
 }
 
 $(".result-move").change(function() {
@@ -949,7 +949,7 @@ $(document).ready(function() {
             );
             return $state;
 
-        }
+        } 
     });
 
     $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
@@ -964,3 +964,30 @@ $(document).ready(function() {
     $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id).trigger("change");
 
 });
+
+function enablePanel(num){
+    if (num == 1) {
+        document.getElementById("p1").style.display = "block";
+        document.getElementById("p2").style.display = "none";
+        document.getElementById("p3").style.display = "none";
+        document.getElementById("but-p1").disabled = true;
+        document.getElementById("but-p2").disabled = false;
+        document.getElementById("but-p3").disabled = false;
+    }
+    else if (num == 2) {
+        document.getElementById("p1").style.display = "none";
+        document.getElementById("p2").style.display = "block";
+        document.getElementById("p3").style.display = "none";
+        document.getElementById("but-p1").disabled = false;
+        document.getElementById("but-p2").disabled = true;
+        document.getElementById("but-p3").disabled = false;
+    }
+    else {
+        document.getElementById("p1").style.display = "none";
+        document.getElementById("p2").style.display = "none";
+        document.getElementById("p3").style.display = "block";
+        document.getElementById("but-p1").disabled = false;
+        document.getElementById("but-p2").disabled = false;
+        document.getElementById("but-p3").disabled = true;
+    }
+}
