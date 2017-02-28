@@ -31,36 +31,12 @@
 </head>
 <body>
 
-<div class="header"><div class="wrapper">
-    <span class="header-logo"><a href="http://trainertower.com"><img src="image_res/trainertower.png" alt="Trainer Tower" height="50px" /></a></span><span class="nav"><a href="http://trainertower.com">Home</a> | <a href="http://play.pokemonshowdown.com/vgc">Showdown</a> | <a href="http://www.trainertower.com/vgc-2017-speed-tiers/">2017 Speed Tiers</a> | <a href="https://github.com/jake-white/VGC-Damage-Calculator">GitHub Page</a> | <a href="https://lilymaniac.github.io/calc/">한국어 계산기 (Korean Version)</a> | <a href="http://trainertower.com/usage-stats">Usage Stats</a></span>
-    <div style="clear:both"></div>
+
 
 </div></div>
 <div class="wrapper">
-    <div class="headline">
-        <span class="title-text">Pokémon Damage Calculator - VGC 2017 Edition</span>
-        <span  class="generations" title="Select the generation.">
-                <input class="gen btn-input" type="radio" name="gen" value="1" id="gen1" /><label class="btn btn-small btn-left" for="gen1">RBY</label>
-                <input class="gen btn-input" type="radio" name="gen" value="2" id="gen2" /><label class="btn btn-small btn-mid" for="gen2">GSC</label>
-                <input class="gen btn-input" type="radio" name="gen" value="3" id="gen3" /><label class="btn btn-small btn-mid" for="gen3">ADV</label>
-                <input class="gen btn-input" type="radio" name="gen" value="4" id="gen4" /><label class="btn btn-small btn-mid" for="gen4">DPP</label>
-                <input class="gen btn-input" type="radio" name="gen" value="5" id="gen5" /><label class="btn btn-small btn-mid" for="gen5">B/W</label>
-                <input class="gen btn-input" type="radio" name="gen" value="6" id="gen6" /><label class="btn btn-small btn-mid" for="gen6">ORAS</label>
-                <input class="gen btn-input" type="radio" name="gen" value="7" id="gen7" checked="checked" /><label class="btn btn-small btn-right" for="gen7">S/M</label>
-            </span>
-    </div>
-    <hr />
-    <div align="center"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- Damage Calc Ad -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:200px;height:90px"
-             data-ad-client="ca-pub-1513870120798988"
-             data-ad-slot="8348790551"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    <p>Sun/Moon calculator by <a href="https://twitter.com/squirrelboyVGC">@squirrelboyVGC</a></p>
+    <input class="gen btn-input" type="radio" name="gen" value="7" id="gen7" checked="checked" />
+
 
     <!-- OLD NUGGETBRIDGE ADS -->
     <!-- TRAINER TOWER ADS GO HERE :) -->
@@ -75,18 +51,18 @@
     </script></div> -->
     <div class="move-result-group" title="Select a move to show detailed results.">
         <div class="move-result-subgroup">
-            <div class="result-move-header"><span id="resultHeaderL">Pokemon 1's Moves (select one to show detailed results)</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL1" checked="checked" /><label class="btn btn-xxxwide btn-top" for="resultMoveL1">Hi Jump Kick</label> <span id="resultDamageL1">??? - ???%</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL2" /><label class="btn btn-xxxwide btn-mid" for="resultMoveL2">Falcon Punch</label> <span id="resultDamageL2">??? - ???%</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL3" /><label class="btn btn-xxxwide btn-mid" for="resultMoveL3">Suspicious Odor</label> <span id="resultDamageL3">??? - ???%</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL4" /><label class="btn btn-xxxwide btn-bottom" for="resultMoveL4">Tombstoner</label> <span id="resultDamageL4">??? - ???%</span></div>
+            <div class="result-move-header"><span id="resultHeaderL">Pokemon 1's Moves</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL1" checked="checked" /><label class="btn btn-xwide btn-top" for="resultMoveL1">Hi Jump Kick</label> <span id="resultDamageL1">??? - ???%</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL2" /><label class="btn btn-xwide btn-mid" for="resultMoveL2">Falcon Punch</label> <span id="resultDamageL2">??? - ???%</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL3" /><label class="btn btn-xwide btn-mid" for="resultMoveL3">Suspicious Odor</label> <span id="resultDamageL3">??? - ???%</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveL4" /><label class="btn btn-xwide btn-bottom" for="resultMoveL4">Tombstoner</label> <span id="resultDamageL4">??? - ???%</span></div>
         </div>
         <div class="move-result-subgroup">
-            <div class="result-move-header"><span id="resultHeaderR">Pokemon 2's Moves (select one to show detailed results)</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR1" /><label class="btn btn-xxxwide btn-top" for="resultMoveR1">Hi Jump Kick</label> <span id="resultDamageR1">??? - ???%</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR2" /><label class="btn btn-xxxwide btn-mid" for="resultMoveR2">Falcon Punch</label> <span id="resultDamageR2">??? - ???%</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR3" /><label class="btn btn-xxxwide btn-mid" for="resultMoveR3">Suspicious Odor</label> <span id="resultDamageR3">??? - ???%</span></div>
-            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR4" /><label class="btn btn-xxxwide btn-bottom" for="resultMoveR4">Tombstoner</label> <span id="resultDamageR4">??? - ???%</span></div>
+            <div class="result-move-header"><span id="resultHeaderR">Pokemon 2's Moves</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR1" /><label class="btn btn-xwide btn-top" for="resultMoveR1">Hi Jump Kick</label> <span id="resultDamageR1">??? - ???%</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR2" /><label class="btn btn-xwide btn-mid" for="resultMoveR2">Falcon Punch</label> <span id="resultDamageR2">??? - ???%</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR3" /><label class="btn btn-xwide btn-mid" for="resultMoveR3">Suspicious Odor</label> <span id="resultDamageR3">??? - ???%</span></div>
+            <div><input class="result-move btn-input" type="radio" name="resultMove" id="resultMoveR4" /><label class="btn btn-xwide btn-bottom" for="resultMoveR4">Tombstoner</label> <span id="resultDamageR4">??? - ???%</span></div>
         </div>
     </div>
     <div class="main-result-group">
@@ -94,15 +70,31 @@
         <div class="small-text"><span id="damageValues">(If you see this message for more than a few seconds, try enabling JavaScript. If you have that enabled, try deleting your cookies. Otherwise, I won't be able to help you unless you send a screenshot of your browser console.)</span></div>
     </div>
 
+
+
+    <div class="panel-heading">
+        <div class="buttons">
+            <button class="panel-toggle" id="but-p1" onclick="enablePanel(1)" disabled>
+                Pokémon 1
+            </button>
+            <button class="panel-toggle" id="but-p3" onclick="enablePanel(3)">
+                Field
+            </button>
+            <button class="panel-toggle" id="but-p2" onclick="enablePanel(2)">
+                Pokémon 2
+            </button>
+        </div>
+    </div>
+
     <div class="panels">
 
         <div class="panel poke-info" id="p1">
-            <div class="panel-heading"><h4 class="panel-title">Pokémon 1</h4></div>
+
             <div class="panel-body">
                 <select class="set-selector calc-trigger">
 
                 </select>
-                <div class="info-group">
+                <div class="info-group" id="typeforme">
                     <div>
                         <label>Type</label>
                         <select class="type1 terrain-trigger calc-trigger"></select>
@@ -198,8 +190,8 @@
             </div>
         </div>
 
-        <div class="panel field-info">
-            <div class="panel-heading">
+        <div class="panel field-info" id="p3">
+            <!--<div class="panel-heading">
                 <h4 class="panel-title">Field
                     <div id = "autolevel">Auto-Level to:
                         <div class="onoffswitch" style="margin-left: 1em">
@@ -211,7 +203,7 @@
                         </div>
                     </div>
                 </h4>
-            </div>
+            </div>-->
             <div class="panel-body">
                 <div class="gen-specific g7">
                     <a href = "https://www.youtube.com/watch?v=pi7g9LbBv8A">
@@ -350,15 +342,17 @@
                     <button type = "button" onclick = "savecustom()">Save</button> <button type = "button" onclick = "deletecustom()">Delete Custom Sets</button>
                     <p style="width: 200px">You may need to refresh the page after deleting your custom sets.  If you encounter a bug, please try deleting your cookies or reporting it!</p>
                 </div>
+
+                <div class="footer">
+        <p><em>This calculator is based on the work of Honko, gamut, and Zarel. It was optimized for players in the Pokémon Championship Series by Tapin, Firestorm, and squirrelboy1225. Huge thanks to NuggetBridge for hosting this calculator in the past.</em></p></div>
             </div>
         </div>
 
         <div class="panel poke-info" id="p2">
-            <div class="panel-heading"><h4 class="panel-title">Pokémon 2</h4></div>
             <div class="panel-body">
                 <select class="set-selector calc-trigger">
                 </select>
-                <div class="info-group">
+                <div class="info-group" id="typeforme">
                     <div>
                         <label>Type</label>
                         <select class="type1 terrain-trigger calc-trigger"></select>
@@ -453,8 +447,7 @@
         </div>
 
     </div>
-    <div class="footer">
-        <p><em>This calculator is based on the work of Honko, gamut, and Zarel. It was optimized for players in the Pokémon Championship Series by Tapin, Firestorm, and squirrelboy1225. Huge thanks to NuggetBridge for hosting this calculator in the past.</em></p></div>
+
 </div>
 
 
