@@ -114,7 +114,7 @@ body, html {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
 }
 .panel-body {
-  padding: 8px;
+  padding: 0 8px 0 4px;
 }
 .panel-heading {
   background-color: #1e3864;
