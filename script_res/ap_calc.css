@@ -182,7 +182,7 @@ th {
 
 /* pokemon info */
 .poke-info label {
-    width: 100%;
+    width: 6em;
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
     -moz-box-sizing: border-box;
@@ -228,7 +228,7 @@ th {
     width: 290px;
 }
 .info-selectors select {
-    width: 600px;
+    width: 100%;
 }
 select.toxic-counter {
     width: 4.5em;
