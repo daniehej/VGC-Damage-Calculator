@@ -692,6 +692,7 @@ function Field() {
     var format = $("input:radio[name='format']:checked").val();
     var isGravity = $("#gravity").prop("checked");
     var isSR = [$("#srL").prop("checked"), $("#srR").prop("checked")];
+    var isProtect = [$("#protectL").prop("checked"), $("#protectR").prop("checked")];
     var weather;
     var spikes;
     if (gen === 2) {
@@ -716,11 +717,11 @@ function Field() {
         weather = "";
     };
     this.getSide = function(i) {
-        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i]);
+        return new Side(format, terrain, weather, isGravity, isSR[i], spikes[i], isReflect[i], isLightScreen[i], isForesight[i], isHelpingHand[i], isFriendGuard[i], isBattery[i], isProtect[i]);
     };
 }
 
-function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery) {
+function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLightScreen, isForesight, isHelpingHand, isFriendGuard, isBattery, isProtect) {
     this.format = format;
     this.terrain = terrain;
     this.weather = weather;
@@ -733,6 +734,7 @@ function Side(format, terrain, weather, isGravity, isSR, spikes, isReflect, isLi
     this.isHelpingHand = isHelpingHand;
     this.isFriendGuard = isFriendGuard;
     this.isBattery = isBattery;
+    this.isProtect = isProtect;
 }
 
 var gen, pokedex, setdex, typeChart, moves, abilities, items, STATS, calculateAllMoves, calcHP, calcStat;

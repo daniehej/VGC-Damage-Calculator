@@ -940,6 +940,11 @@ var MOVES_DPP = $.extend(true, {}, MOVES_ADV, {
         type: 'Dark',
         category: 'Physical'
     },
+    'Fly':{
+        bp: 90,
+        type: 'Flying',
+        category: 'Physical'
+    },
     'Focus Blast': {
         bp: 120,
         type: 'Fighting',
@@ -1495,6 +1500,12 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         type: 'Psychic',
         category: 'Special',
         dealsPhysicalDamage: true
+    },    
+    'Razor Leaf': {
+        bp: 55,
+        type: 'Grass',
+        category: 'Physical',
+        isSpread: true
     },
     'Razor Shell': {
         bp: 75,
@@ -1686,6 +1697,11 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         hasSecondaryEffect: true
     },
     'Frost Breath': { bp: 60 },
+    'Future Sight': { 
+        bp: 120,
+        type: 'Psychic',
+        category: 'Special'
+    },
     'Heat Wave': { bp: 95 },
     'Hex': { bp: 65 },
     'Hidden Power Bug': { bp: 60 },
@@ -1834,6 +1850,8 @@ var ZMOVES_LOOKUP = {
     'Flying':'Supersonic Skystrike','Dragon':'Devastating Drake','Poison':'Acid Downpour'};
 
 var MOVES_SM = $.extend(true, {}, MOVES_XY, {
+
+    'Future Sight': { zp: 190 },
     'Mud Shot': {
         zp: 100
     },
@@ -1971,10 +1989,11 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
         bp: 90,
         zp: 175
     },
-    'Clanging Scales': {
+    'Clanging Scales': {        
         category: 'Special',
         type: 'Dragon',
         bp: 110,
+        isSpread: true,
         zp: 185
     },
     'Beak Blast': {
@@ -2158,6 +2177,12 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
     },
     'Black Hole Eclipse': {
         type: 'Dark'
+    },
+    'Razor Leaf':{
+        zp: 100
+    },
+    'Fly':{
+        zp: 175
     },
     'Fire Punch':{
         zp: 140
