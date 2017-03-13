@@ -315,7 +315,6 @@ select.toxic-counter {
     text-decoration: none;
 }
 .onoffswitch {
-  float: right;
     position: relative; width: 70px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
     display: inline-block;
