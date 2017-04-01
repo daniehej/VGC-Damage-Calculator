@@ -12661,28 +12661,7 @@ var SMDEX = {
 "Celesteela": {},
 "Kartana": {},
 "Guzzlord": {},
-"Necrozma": {},
-"Magearna": {},
-"Marshadow": {},
 
-/*"Arceus": {},
-"Arceus-Fairy": {},
-"Arceus-Water": {},
-"Arceus-Steel": {},
-"Arceus-Rock": {},
-"Arceus-Psychic": {},
-"Arceus-Poison": {},
-"Arceus-Ice": {},
-"Arceus-Ground": {},
-"Arceus-Grass": {},
-"Arceus-Ghost": {},
-"Arceus-Flying": {},
-"Arceus-Fire": {},
-"Arceus-Fighting": {},
-"Arceus-Electric": {},
-"Arceus-Dragon": {},
-"Arceus-Dark": {},
-"Arceus-Bug": {}*/
 
 }
 
