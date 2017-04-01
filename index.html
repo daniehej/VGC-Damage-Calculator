@@ -79,7 +79,7 @@
         <div class="panel poke-info" id="p1">
 
             <div class="panel-body">
-                <select class="set-selector calc-trigger">
+                <select class="set-selector calc-trigger" id="set-selector-id">
 
                 </select>
                 <div class="info-group" id="typeforme">
@@ -200,7 +200,13 @@
                     <span class="onoffswitch-inner"></span>
                     <span class="onoffswitch-switch"></span>
                 </label>
+
             </div>
+            <p class="paragraph">Simple Pokémon selection box (Better performance):
+            <input type="checkbox" name="onoffswitch" id="simpleSelect-id" onclick="simpleSelect(this)">
+            </p>
+            <p class="paragraph">To see the full dex, click this link: <a href="?fulldex=true">?fulldex=true</a>
+            </p>
                 <div class="gen-specific g7">
                     <a href = "https://www.youtube.com/watch?v=pi7g9LbBv8A">
                         <img align = "middle" src="image_res/mimikyu.png" alt="Mimikyu da yo" height="42" width="42" >
@@ -355,7 +361,7 @@
 
         <div class="panel poke-info" id="p2">
             <div class="panel-body">
-                <select class="set-selector calc-trigger">
+                <select class="set-selector calc-trigger" id="set-selector-id2">
                 </select>
                 <div class="info-group" id="typeforme">
                     <div>

@@ -890,10 +890,10 @@ function getSetOptions() {
     var idNum = 0;
     for (var i = 0; i < pokeNames.length; i++) {
         var pokeName = pokeNames[i];
-        setOptions.push({
-            pokemon: pokeName,
-            text: pokeName
-        });
+//        setOptions.push({
+//            pokemon: pokeName,
+//            text: pokeName
+//        });
         if (pokeName in setdex) {
             var setNames = Object.keys(setdex[pokeName]);
             for (var j = 0; j < setNames.length; j++) {
@@ -906,13 +906,16 @@ function getSetOptions() {
                 });
             }
         }
-        setOptions.push({
-            pokemon: pokeName,
-            set: "Blank Set",
-            text: pokeName + " (Blank Set)",
-            id: pokeName + " (Blank Set)"
-        });
+        else {
+            setOptions.push({
+                pokemon: pokeName,
+                set: "Blank Set",
+                text: pokeName + " (Blank Set)",
+                id: pokeName + " (Blank Set)"
+            });
+        }
     }
+    console.log(setOptions);
     return setOptions;
 }
 
@@ -943,7 +946,7 @@ $(document).ready(function() {
 
     $(".set-selector").select2({
         data: getSetOptions(),
-        templateResult: function (object) {
+/*        templateResult: function (object) {
             if (object.loading) return object.text;
             var content = object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
             var $state = $(
@@ -951,19 +954,13 @@ $(document).ready(function() {
             );
             return $state;
 
-        } 
+        } */
     });
 
-    $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
-        $(".move-selector").select2({
-            dropdownAutoWidth:true,
-            matcher: oldMatcher(function(term, text) {
-                // 2nd condition is for Hidden Power
-                return text.toUpperCase().indexOf(term.toUpperCase()) === 0 || text.toUpperCase().indexOf(" " + term.toUpperCase()) >= 0;
-            })
-        });
-    });
+    
     $(".set-selector").val(getSetOptions()[gen > 3 ? 1 : gen === 1 ? 5 : 3].id).trigger("change");
+
+
 
 });
 
@@ -993,3 +990,24 @@ function enablePanel(num){
         document.getElementById("but-p3").disabled = true;
     }
 }
+
+function simpleSelect(checkboxElement){
+    if (checkboxElement.checked){
+        $(document.getElementsByClassName("set-selector")).removeClass(' select2-hidden-accessible');
+        $(document.getElementsByClassName("select2")).addClass(' select2-hidden-accessible');
+    }
+    else{
+        $(document.getElementsByClassName("set-selector")).addClass(' select2-hidden-accessible');
+        $(document.getElementsByClassName("select2")).removeClass(' select2-hidden-accessible');
+    }
+}
+
+function fullDex(checkboxElement){
+    if (checkboxElement.checked){
+        POKEDEX_SM = POKEDEX_TEMP
+    }
+    else{
+        POKEDEX_SM = SMDEX
+    }
+}
+

@@ -410,3 +410,7 @@ td,
 label {
     text-align: left;
 }
+
+.paragraph {
+    margin:0px;
+}
